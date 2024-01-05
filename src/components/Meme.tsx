@@ -13,6 +13,8 @@ interface MemeProps {
 export default function Meme() {
     const [meme, setMeme] = React.useState({
         topText: "",
+        lefttext: "",
+        righttext: "",
         bottomText: "",
         midTopText: "",
         midBotText: "",
@@ -67,6 +69,17 @@ export default function Meme() {
                     value={meme.topText}
                     onChange={handleChange}
                 />
+
+                
+                <input 
+                    type="text"
+                    placeholder="Bottom text"
+                    className="form--input"
+                    name="bottomText"
+                    value={meme.bottomText}
+                    onChange={handleChange}
+                />
+
                 <input 
                     type="text"
                     placeholder="Mid Top text"
@@ -84,15 +97,25 @@ export default function Meme() {
                     value={meme.midBotText}
                     onChange={handleChange}
                 />
-                
+
                 <input 
                     type="text"
-                    placeholder="Bottom text"
+                    placeholder="Left text"
                     className="form--input"
-                    name="bottomText"
-                    value={meme.bottomText}
+                    name="lefttext"
+                    value={meme.lefttext}
                     onChange={handleChange}
                 />
+
+                <input 
+                    type="text"
+                    placeholder="Right text"
+                    className="form--input"
+                    name="righttext"
+                    value={meme.righttext}
+                    onChange={handleChange}
+                />
+                
                 <button 
                     className="form--button"
                     onClick={getMemeImage}
@@ -104,6 +127,8 @@ export default function Meme() {
                 <center><img src={meme.randomImage} className="meme--image" /></center>
                 <h2 className="meme--text top">{meme.topText}</h2>
                 <h2 className="meme--text midTop">{meme.midTopText}</h2>
+                <h2 className="meme--text lefttext">{meme.lefttext}</h2>
+                <h2 className="meme--text righttext">{meme.righttext}</h2>
                 <h2 className="meme--text midBot">{meme.midBotText}</h2>
                 <h2 className="meme--text bottom">{meme.bottomText}</h2>
             </div>
