@@ -1,131 +1,128 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: "Karla", sans-serif;
-    margin: 0;
+  font-family: "Karla", sans-serif;
+  margin: 0;
 }
 
 main {
-    padding: 36px;
+  padding: 36px;
 }
 
 .header {
-    display: flex;
-    align-items: center;
-    height: 65px;
-    background: linear-gradient(170deg, #d4e8f9 2.18%, #62a4f1 30.3%, #7f4bee 77.5%, #9b72f2 100%);
-    color: white;
-    padding: 20px;
+  display: flex;
+  align-items: center;
+  height: 65px;
+  background: linear-gradient(
+    170deg,
+    #d4e8f9 2.18%,
+    #62a4f1 30.3%,
+    #7f4bee 77.5%,
+    #9b72f2 100%
+  );
+  color: white;
+  padding: 20px;
 }
 
 .header--image {
-    height: 100%;
-    margin-right: 6px;
+  height: 100%;
+  margin-right: 6px;
 }
 
 .header--title {
-    font-size: 2.25rem;
-    margin-right: auto;
+  font-size: 2.25rem;
+  margin-right: auto;
 }
 
 .header--project {
-    font-size: 1.55rem;
-    font-weight: 1000;
+  font-size: 1.55rem;
+  font-weight: 1000;
 }
 
 .form {
-    display: grid;
-    grid-template: 35px 35px 35px/ 2fr 2fr ;
-    gap: 17px;
-    margin-bottom: 17px;
+  display: grid;
+  grid-template: 35px 35px 35px/ 2fr 2fr;
+  gap: 17px;
+  margin-bottom: 17px;
 }
 
 .form--input {
-    font-family: "Karla", sans-serif;
-    border-radius: 5px;
-    margin-left: 15%;
-    border: 1px solid #D5D4D8;
-    text-indent: 5px;
-    width: 70%;
-    cursor: pointer;
+  font-family: "Karla", sans-serif;
+  border-radius: 5px;
+  margin-left: 15%;
+  border: 1px solid #d5d4d8;
+  text-indent: 5px;
+  width: 70%;
+  cursor: pointer;
 }
 
 .form--button {
-    grid-column: 1 / -1;
-    font-family: "Karla", sans-serif;
-    border-radius: 5px;
-    height: 35px;
-    width: 80%;
-    font-size: 20px;
-    padding-left: 0%;
-    margin-left: 10%;
-    background: linear-gradient(92.41deg, #784299,#d62127,#f6851e ,#ffffff);
-    color: aliceblue;
-    border: none;
-    cursor: pointer;
+  grid-column: 1 / -1;
+  font-family: "Karla", sans-serif;
+  border-radius: 5px;
+  height: 35px;
+  width: 80%;
+  font-size: 20px;
+  padding-left: 0%;
+  margin-left: 10%;
+  background: linear-gradient(92.41deg, #784299, #d62127, #f6851e, #ffffff);
+  color: aliceblue;
+  border: none;
+  cursor: pointer;
 }
 
 .meme {
-    position: relative;
+  position: relative;
 }
 
 .meme--image {
-    max-width: 50%;
-    border-radius: 3px;
+  max-width: 50%;
+  border-radius: 3px;
 }
 
 .meme--text {
-    position: absolute;
-    width: 80%;
-    text-align: center;
-    left: 50%;
-    transform: translateX(-50%);
-    margin: 15px 0;
-    padding: 0 5px;
-    font-family: impact, sans-serif;
-    font-size: 2em;
-    text-transform: uppercase;
-    color: white;
-    letter-spacing: 1px;
-    text-shadow:
-        2px 2px 0 #000,
-        -2px -2px 0 #000,
-        2px -2px 0 #000,
-        -2px 2px 0 #000,
-        0 2px 0 #000,
-        2px 0 0 #000,
-        0 -2px 0 #000,
-        -2px 0 0 #000,
-        2px 2px 5px #000;
+  position: absolute;
+  width: 80%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 15px 0;
+  padding: 0 5px;
+  font-family: impact, sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000,
+    -2px 2px 0 #000, 0 2px 0 #000, 2px 0 0 #000, 0 -2px 0 #000, -2px 0 0 #000,
+    2px 2px 5px #000;
 }
 
 .bottom {
-    bottom: 3%;
+  bottom: 3%;
 }
 
 .top {
-    top: 0;
+  top: 0;
 }
-.midTop{
-    top: 28%;
-}
-
-
-.midBot{
-    top: 63%;
+.midTop {
+  top: 28%;
 }
 
-.righttext{
-    top: 50%;
-    right: 58%;
-    padding-left: 350px;
+.midBot {
+  top: 63%;
 }
 
+.righttext {
+  top: 50%;
+  right: 58%;
+  padding-left: 350px;
+}
 
-.lefttext{
-    top: 50%;
-    left: 58%;
-    padding-right: 550px;
+.lefttext {
+  top: 50%;
+  left: 58%;
+  padding-right: 550px;
 }
